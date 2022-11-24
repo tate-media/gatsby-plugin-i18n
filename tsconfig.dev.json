@@ -17,7 +17,8 @@
 		"./gatsby-config.ts",
 		"./gatsby-node.ts",
 		"./gatsby-ssr.tsx",
-		"./src/**/*"
+		"./src/**/*",
+		"./dist/**/*"
 	],
 	"include": [
 		"./jest.config.ts",

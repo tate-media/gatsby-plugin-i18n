@@ -18,7 +18,8 @@
 		"./jest.config.ts",
 		"./jest/**/*",
 		"./src/**/*.test.ts",
-		"./src/**/*.test.tsx"
+		"./src/**/*.test.tsx",
+		"./dist/**/*"
 	],
 	"include": [
 		"./gatsby-browser.tsx",

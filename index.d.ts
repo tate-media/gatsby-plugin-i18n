@@ -1,6 +1,6 @@
-declare module "@tate-media/gatsby-plugin-i18n" {
-	import React from "react";
+import React from "react";
 
+declare module "@tate-media/gatsby-plugin-i18n" {
 	export interface I18nContextTranslation {
 		locale?: string;
 		path?: string;

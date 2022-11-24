@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"jsx": "react",
+		"lib": ["DOM", "ESNext"],
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"noEmit": false,
+		"outDir": "dist",
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "ESNext",
+		"types": ["node"]
+	},
+	"exclude": [
+		"./jest.config.ts",
+		"./jest/**/*",
+		"./src/**/*.test.ts",
+		"./src/**/*.test.tsx"
+	],
+	"include": [
+		"./gatsby-browser.tsx",
+		"./gatsby-config.ts",
+		"./gatsby-node.ts",
+		"./gatsby-ssr.tsx",
+		"./index.ts",
+		"./package.json",
+		"./src/**/*"
+	]
+}

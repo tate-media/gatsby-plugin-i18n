@@ -1,0 +1,47 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:prettier/recommended"
+	],
+	"ignorePatterns": ["node_modules", "dist"],
+	"overrides": [
+		{
+			"env": {
+				"jest": true
+			},
+			"files": [
+				"./jest.config.ts",
+				"./jest/**/*",
+				"./src/**/__tests__/*",
+				"./src/**/*.test.ts",
+				"./src/**/*.test.tsx",
+				"./plugins/**/__tests__/*",
+				"./plugins/**/*.test.ts",
+				"./plugins/**/*.test.tsx"
+			],
+			"parserOptions": {
+				"project": ["tsconfig.dev.json"]
+			}
+		}
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"projects": ["tsconfig.json"]
+	},
+	"plugins": ["@typescript-eslint", "react"],
+	"rules": {
+		"sort-imports": "error"
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	}
+}

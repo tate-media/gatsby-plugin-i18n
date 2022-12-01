@@ -31,4 +31,5 @@ export const pluginOptionsSchema: GatsbyNode["pluginOptionsSchema"] = ({
 						.description("univerally available translated messages"),
 				})
 			),
+		siteUrl: Joi.string().required().description("site root url"),
 	});

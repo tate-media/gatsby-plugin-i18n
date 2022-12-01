@@ -37,10 +37,12 @@ export const wrapPageElement: WrapPageElement = (
 	const locale = pageContext.locale || defaultLocale;
 	const translations = pageContext.translations || [];
 
-	let messages = getLocaleFromCode(locale, options)?.localMessages ?? {};
+	const messages = getLocaleFromCode(locale, options)?.localMessages ?? {};
 
 	options.locales.forEach((l) => {
-		messages = { ...messages, ...l.universalMessages };
+		Object.entries(l.universalMessages || {}).forEach(([key, value]) => {
+			messages[`${key}.${l.locale}`] = value;
+		});
 	});
 
 	return (

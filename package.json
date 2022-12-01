@@ -1,6 +1,6 @@
 {
 	"name": "@tate-media/gatsby-plugin-i18n",
-	"version": "0.1.1",
+	"version": "0.1.3",
 	"description": "A plugin for supporting i18n in Gatsby",
 	"keywords": [
 		"gatsby",

@@ -15,12 +15,18 @@ const options = {
 				"/meist/": "/meist/",
 				"/kontakt/": "/kontakt/",
 			},
+			universalMessages: {
+				localeCode: "EE",
+			},
 		},
 		{
 			locale: "en-US",
 			prefix: "en",
 			slugs: {
 				"/meist/": "/about/",
+			},
+			universalMessages: {
+				localeCode: "EN",
 			},
 		},
 	],

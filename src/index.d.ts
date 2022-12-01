@@ -18,5 +18,6 @@ declare module "gatsby" {
 	export interface PluginOptions extends GatsbyPluginOptions {
 		defaultLocale: string;
 		locales: PluginOptionsLocale[];
+		siteUrl: string;
 	}
 }
